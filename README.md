@@ -13,6 +13,4 @@ Ky është një projekt i thjeshtë i krijuar me **HTML** dhe **CSS**, ne kuader
 - HTML
 - CSS
 
-### Demostrimi i Projektit
 
-![Ballina - Rugove](/Ballina%20-%20Rugove.mp4)
