@@ -1,0 +1,246 @@
+/* DESKTOP & MOBILE */
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@200&display=swap");
+
+:root {
+  --light-grey: #777777;
+  --dark-grey: #2a2a2a;
+  --grey: #4b4b4c;
+  --blue: #280a82;
+}
+
+* {
+  padding: 0px;
+  margin: 0px;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+.txtcolor {
+  color: var(--light-grey);
+}
+a {
+  color: var(--light-grey);
+  text-decoration: none;
+}
+nav a {
+  color: var(--dark-grey);
+}
+ul {
+  list-style-type: none;
+}
+a:hover {
+  color: var(--blue);
+}
+
+/* HEADER */
+header {
+  width: 100%;
+  height: 120px;
+  background: linear-gradient(to bottom, #1b1b1b, transparent);
+}
+header .container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.logo img {
+  display: block;
+  width: 100%;
+}
+nav a,
+footer a {
+  font-size: 14px;
+  font-weight: 600;
+}
+nav li {
+  margin: 0px 10px;
+  display: inline-block;
+  position: relative;
+}
+nav li a {
+  height: 38px;
+  line-height: 38px;
+  display: inline-block;
+}
+nav li ul {
+  display: none;
+  border-radius: 20px;
+  border: 1px solid var(--grey);
+  position: absolute;
+  background: white;
+}
+nav li ul li {
+  display: block;
+}
+nav li:hover ul {
+  display: block;
+}
+nav li ul li a {
+  color: var(--light-grey);
+}
+nav li:hover ul li {
+  width: 130px;
+  display: block;
+  padding: 10px;
+  border-bottom: 1px solid var(--grey);
+}
+nav li:hover ul li:last-child {
+  border-bottom: none;
+}
+/* MAIN */
+div.start img {
+  width: 100%;
+}
+.history h2 {
+  color: white;
+}
+.history p {
+  color: white;
+}
+.history p span {
+  color: var(--dark-grey);
+  font-weight: 900;
+}
+.history p span:hover {
+  color: var(--blue);
+}
+/* SECTION I */
+.purpose {
+  display: grid;
+  grid-template-columns: 1fr minmax(200px, 2.1fr) 1fr;
+  align-items: center;
+  column-gap: 1.6rem;
+}
+.purpose::before,
+.purpose::after {
+  content: "";
+  height: 2px;
+  background-color: #777777;
+  display: block;
+}
+
+/*  SECTION II */
+.boxI {
+  height: 100vh;
+  width: 100%;
+  background-image: url(../img/firstbg.png);
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+} /*  SECTION III */
+.boxII {
+  height: 100vh;
+  width: 100%;
+  background-image: url(../img/secondbg.png);
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+}
+/*  SECTION IV */
+.boxIII {
+  height: 100vh;
+  width: 100%;
+  background-image: url(../img/thirdbg.png);
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+}
+/*  SECTION V */
+.firstshop ul {
+  margin-top: 20px;
+  display: flex;
+  justify-content: center;
+}
+.firstshop li {
+  margin: 0px 10px;
+}
+.firstshop li a {
+  display: inline-block;
+  font-size: 40px;
+  width: 50px;
+  height: 50px;
+  text-align: center;
+  line-height: 52px;
+  border-radius: 50%;
+  color: white;
+  background-color: var(--blue);
+  transition: all 0.5s ease-in-out;
+}
+.firstshop li a:hover {
+  background-color: var(--light-grey);
+}
+/* FOOTER */
+footer img {
+  width: 250px;
+  display: block;
+  margin-bottom: 30px;
+}
+footer p {
+  margin-right: 90px;
+}
+footer h4 {
+  color: white;
+  margin-bottom: 20px;
+}
+.txtcolor li a span {
+  color: red;
+}
+footer li {
+  margin-bottom: 10px;
+}
+.wrapper a {
+  font-size: 35px;
+}
+.wrapper .icon {
+  position: relative;
+  background: #ffffff;
+  border-radius: 50%;
+  padding: 15px;
+  margin: 10px;
+  width: 50px;
+  height: 50px;
+  font-size: 18px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  box-shadow: 0 10px 10px rgba(0, 0, 0, 0.1);
+  cursor: pointer;
+  transition: all 0.2s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+}
+.wrapper .tooltip {
+  position: absolute;
+  left: -15px;
+  font-size: 14px;
+  background: #ffffff;
+  color: #000000;
+  padding: 5px 8px;
+  border-radius: 3px;
+  box-shadow: 0 10px 10px rgba(0, 0, 0, 0.1);
+  opacity: 0;
+  pointer-events: none;
+  transition: all 0.3s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+}
+
+.wrapper .tooltip::before {
+  position: absolute;
+  content: "";
+  height: 8px;
+  width: 8px;
+  background: #ffffff;
+  bottom: -3px;
+  left: 50%;
+  transform: translate(-50%) rotate(45deg);
+  transition: all 0.3s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+}
+
+.wrapper .icon:hover .tooltip {
+  top: -35px;
+  opacity: 1;
+  visibility: visible;
+  pointer-events: auto;
+}
+
+.wrapper .icon:hover span,
+.wrapper .icon:hover .tooltip {
+  text-shadow: 0px -1px 0px rgba(0, 0, 0, 0.1);
+}

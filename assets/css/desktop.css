@@ -1,0 +1,105 @@
+/* DESKTOP */
+footer {
+  padding: 80px 0px;
+}
+.container {
+  width: 1200px;
+  margin: 0 auto;
+}
+
+.toggle-menu {
+  display: none;
+}
+label {
+  display: none;
+}
+
+/* HEADER */
+
+.logo {
+  margin: 20px;
+  width: 250px;
+  display: block;
+}
+
+nav li ul.submenus {
+  width: 150px;
+}
+
+/* MAIN */
+main .container {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+.descript {
+  flex: 1;
+  background-color: var(--grey);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.logoja-history {
+  margin: 100px;
+  width: 500px;
+  display: block;
+}
+.logoja-history img {
+  display: block;
+}
+
+/* SECTION I */
+.middle {
+  height: 64px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/*  SECTION V */
+.boxIV {
+  height: 50vh;
+  width: 100%;
+  background-image: url(../img/fourthbg.png);
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+  background-color: var(--grey);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.firstshop {
+  margin: 100px;
+  width: 500px;
+  display: block;
+}
+.firstshop img {
+  display: block;
+}
+.firstshop h3 {
+  color: white;
+  font-size: 18px;
+}
+
+.imgc {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+/* FOOTER */
+footer {
+  background-color: var(--dark-grey);
+}
+footer .container {
+  display: grid;
+  grid-template-columns: 2fr 1fr 2fr 0.7fr;
+}
+
+.wrapper {
+  display: inline-block;
+  list-style: none;
+}
